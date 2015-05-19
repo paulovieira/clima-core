@@ -1,0 +1,29 @@
+{
+  "name": "clima-core",
+  "version": "0.0.1",
+  "description": "...",
+  "main": "lib/index.js",
+  "license": "BSD",
+  "dependencies": {
+    "config": "1.x.x",
+    "good": "^6.1.2",
+    "good-console": "^5.0.0",
+    "hapi": "8.x.x",
+    "hapi-auth-basic": "2.x.x",
+    "hapi-nunjucks": "^0.0.5",
+    "hoek": "2.x.x",
+    "pg-promise": "^1.2.1",
+    "q": "^1.4.1"
+  },
+  "scripts": {
+    "start": "node lib/start.js"
+  },
+  "devDependencies": {
+    "boom": "^2.7.1",
+    "code": "1.x.x",
+    "good-console": "^5.0.0",
+    "lab": "5.x.x",
+    "underscore": "^1.8.3",
+    "underscore.string": "^3.0.3"
+  }
+}
