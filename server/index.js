@@ -3,7 +3,7 @@
 var Hapi = require('hapi');
 var DB = require('./db');
 
-var IndexRoute = require('./routes/index');
+var HomeRoute = require('./routes/home');
 var GeneralPageRoute = require('./routes/general-page');
 var CatchAllRoute = require('./routes/catch-all');
 
@@ -30,7 +30,7 @@ exports.init = function (port, next) {
     var plugins = [];
 
     // routes
-    plugins.push(IndexRoute);
+    plugins.push(HomeRoute);
     plugins.push(GeneralPageRoute);
     plugins.push(CatchAllRoute);
 
