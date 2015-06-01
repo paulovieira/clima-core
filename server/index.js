@@ -2,14 +2,14 @@
 
 var Hapi = require('hapi');
 var DB = require('./db');
-
+/*
 var HomeRoute = require('./routes/home');
 var GeneralPageRoute = require('./routes/general-page');
 var CatchAllRoute = require('./routes/catch-all');
 
 var ClimaAuthCookie = require('../../clima-auth-cookie/lib/index.js');
-
-var ClimaApiTexts = require('../../clima-api-texts/lib/index.js');
+*/
+var ClimaApiTexts = require('../../clima-api-texts');
 
 var Good = require("good");
 var GoodConsole = require("good-console");
@@ -30,12 +30,12 @@ exports.init = function (port, next) {
     var plugins = [];
 
     // routes
-    plugins.push(HomeRoute);
-    plugins.push(GeneralPageRoute);
-    plugins.push(CatchAllRoute);
+    // plugins.push(HomeRoute);
+    // plugins.push(GeneralPageRoute);
+    // plugins.push(CatchAllRoute);
 
     // authentication
-    plugins.push(ClimaAuthCookie);
+    //plugins.push(ClimaAuthCookie);
 
     plugins.push({
         register: Good,
@@ -53,6 +53,13 @@ exports.init = function (port, next) {
         }
     });
 
+    plugins.push({
+        register: ClimaApiTexts,
+        options: {
+            db: DB
+        }
+    });
+
     server.register(plugins, function (err) {
 
         if (err) {
@@ -66,27 +73,24 @@ exports.init = function (port, next) {
     });
 
 
-
-
-
     // api
-    server.register(
-        {
-            register: ClimaApiTexts,
-            options: {
-                db: DB
-            }
-        },
-        {
-            routes: {
-                prefix: "/api"
-            }
-        },
-        function (err) {
-            if (err) {
-                return next(err);
-            }
-        }
-    );
+    // server.register(
+    //     {
+    //         register: ClimaApiTexts,
+    //         options: {
+    //             db: DB
+    //         }
+    //     },
+    //     {
+    //         routes: {
+    //             prefix: "/api"
+    //         }
+    //     },
+    //     function (err) {
+    //         if (err) {
+    //             return next(err);
+    //         }
+    //     }
+    // );
 
 };

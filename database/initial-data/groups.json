@@ -1,0 +1,57 @@
+[
+	{
+		"id": 1,
+		"code": 1,
+		"name": "energia",
+		"permissions": {
+			"canEditTexts": true
+		}
+	},
+	{
+		"id": 2,
+		"code": 2,
+		"name": "biodiversidade"
+	},
+	{
+		"id": 3,
+		"code": 3,
+		"name": "agricultura_florestas"
+	},
+	{
+		"id": 4,
+		"code": 4,
+		"name": "recursos_hidricos"
+	},
+	{
+		"id": 5,
+		"code": 5,
+		"name": "saude"
+	},
+	{
+		"id": 6,
+		"code": 6,
+		"name": "turismo"
+	},
+
+
+
+	{
+		"id": 7,
+		"code": 98,
+		"name": "coordenacao",
+		"description": {
+			"pt": "grupo coordenação",
+			"en": "management group"
+		},
+		"permissions": {
+			"canEditTexts": true,
+			"dashboard": ["personal", "texts"]
+		}
+	},
+
+	{
+		"id": 8,
+		"code": 99,
+		"name": "admin"
+	}
+]

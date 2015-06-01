@@ -1,0 +1,588 @@
+[
+    {
+        "id": 1,
+        "name": "biodiversidade_w800.jpg",
+        "logicalPath": "/uploads/public/images",
+        "physicalPath": "/data/uploads/public/images",
+        "tags": ["image", "biodiversidade"],
+        "owner_id": 2
+    }, 
+
+    {
+        "id": 2,
+        "name": "recursos_hidricos_w800.jpg",
+        "logicalPath": "/uploads/public/images",
+        "physicalPath": "/data/uploads/public/images",
+        "tags": ["image", "recursos-hidricos"],
+        "owner_id": 2
+    }, 
+
+    {
+        "id": 3,
+        "name": "saude_w800.jpg",
+        "logicalPath": "/uploads/public/images",
+        "physicalPath": "/data/uploads/public/images",
+        "tags": ["image", "saude"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 4,
+        "name": "turismo_w800.jpg",
+        "logicalPath": "/uploads/public/images",
+        "physicalPath": "/data/uploads/public/images",
+        "tags": ["image", "turismo"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 5,
+        "name": "agricultura_florestas_w800.jpg",
+        "logicalPath": "/uploads/public/images",
+        "physicalPath": "/data/uploads/public/images",
+        "tags": ["image", "agricultura-florestas"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 6,
+        "name": "energia_w800.jpg",
+        "logicalPath": "/uploads/public/images",
+        "physicalPath": "/data/uploads/public/images",
+        "tags": ["image", "energia"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 7,
+        "name": "logo-drota_70px.jpg",
+        "logicalPath": "/uploads/public/images/logos",
+        "physicalPath": "/data/uploads/public/images/logos",
+        "tags": ["image", "logo"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 8,
+        "name": "logo-cciam_70px.jpg",
+        "logicalPath": "/uploads/public/images/logos",
+        "physicalPath": "/data/uploads/public/images/logos",
+        "tags": ["image", "logo"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 9,
+        "name": "logo-fcul_70px.png",
+        "logicalPath": "/uploads/public/images/logos",
+        "physicalPath": "/data/uploads/public/images/logos",
+        "tags": ["image", "logo"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 10,
+        "name": "logo-ffcul_70px.jpg",
+        "logicalPath": "/uploads/public/images/logos",
+        "physicalPath": "/data/uploads/public/images/logos",
+        "tags": ["image", "logo"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 11,
+        "name": "200x200.gif",
+        "logicalPath": "/uploads/public/images/placeholders",
+        "physicalPath": "/data/uploads/public/images/placeholders",
+        "tags": ["image", "placeholder"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 12,
+        "name": "200x300.gif",
+        "logicalPath": "/uploads/public/images/placeholders",
+        "physicalPath": "/data/uploads/public/images/placeholders",
+        "tags": ["image", "placeholder"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 13,
+        "name": "300x200.gif",
+        "logicalPath": "/uploads/public/images/placeholders",
+        "physicalPath": "/data/uploads/public/images/placeholders",
+        "tags": ["image", "placeholder"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 14,
+        "name": "300x250.gif",
+        "logicalPath": "/uploads/public/images/placeholders",
+        "physicalPath": "/data/uploads/public/images/placeholders",
+        "tags": ["image", "placeholder"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 15,
+        "name": "300x300.gif",
+        "logicalPath": "/uploads/public/images/placeholders",
+        "physicalPath": "/data/uploads/public/images/placeholders",
+        "tags": ["image", "placeholder"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 16,
+        "name": "300x350.gif",
+        "logicalPath": "/uploads/public/images/placeholders",
+        "physicalPath": "/data/uploads/public/images/placeholders",
+        "tags": ["image", "placeholder"],
+        "owner_id": 1
+    }, 
+
+    {
+        "id": 17,
+        "name": "400x300.gif",
+        "logicalPath": "/uploads/public/images/placeholders",
+        "physicalPath": "/data/uploads/public/images/placeholders",
+        "tags": ["image", "placeholder"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 18,
+        "name": "header_madeira4.jpg",
+        "logicalPath": "/uploads/public/images",
+        "physicalPath": "/data/uploads/public/images",
+        "description": {
+            "pt": "imagem principal (homepag)",
+            "en": "imagem principal (homepag)"
+        },
+        "tags": ["image"],
+        "owner_id": 1
+    },
+
+
+    // carousel - clima
+    {
+        "id": 20,
+        "name": "madeira-ilha_gr_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "clima"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 21,
+        "name": "laurisilva_madeira2_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "clima"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 22,
+        "name": "vinice_madeira_santana_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "clima"],
+        "owner_id": 1
+    },
+
+
+
+    // carousel - adaptacao
+    {
+        "id": 23,
+        "name": "madeira-ilha_gr_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "adaptacao"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 24,
+        "name": "laurisilva_madeira2_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "adaptacao"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 25,
+        "name": "vinice_madeira_santana_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "adaptacao"],
+        "owner_id": 1
+    },
+
+
+
+    // carousel - biodiversidade
+    {
+        "id": 26,
+        "name": "madeira-ilha_gr_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "biodiversidade"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 27,
+        "name": "laurisilva_madeira2_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "biodiversidade"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 28,
+        "name": "vinice_madeira_santana_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "biodiversidade"],
+        "owner_id": 1
+    },
+
+
+
+
+
+
+
+    // carousel - saude
+    {
+        "id": 29,
+        "name": "madeira-ilha_gr_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "saude"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 30,
+        "name": "laurisilva_madeira2_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "saude"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 31,
+        "name": "vinice_madeira_santana_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "saude"],
+        "owner_id": 1
+    },
+
+
+
+
+
+
+    // carousel - turismo
+    {
+        "id": 32,
+        "name": "madeira-ilha_gr_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "turismo"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 33,
+        "name": "laurisilva_madeira2_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "turismo"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 34,
+        "name": "vinice_madeira_santana_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "turismo"],
+        "owner_id": 1
+    },
+
+    // carousel - agricultura-e-florestas
+    {
+        "id": 35,
+        "name": "madeira-ilha_gr_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "agricultura-florestas"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 36,
+        "name": "laurisilva_madeira2_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "agricultura-florestas"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 37,
+        "name": "vinice_madeira_santana_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "agricultura-florestas"],
+        "owner_id": 1
+    },
+
+    // carousel - energia
+    {
+        "id": 38,
+        "name": "madeira-ilha_gr_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "energia"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 39,
+        "name": "laurisilva_madeira2_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "energia"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 40,
+        "name": "vinice_madeira_santana_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "energia"],
+        "owner_id": 1
+    },
+
+
+
+    // carousel - risco-hidrologico
+    {
+        "id": 41,
+        "name": "madeira-ilha_gr_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "risco-hidrologico"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 42,
+        "name": "laurisilva_madeira2_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "risco-hidrologico"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 43,
+        "name": "vinice_madeira_santana_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "risco-hidrologico"],
+        "owner_id": 1
+    },
+
+    // carousel - qualidade-disponibilidade-agua
+    {
+        "id": 44,
+        "name": "madeira-ilha_gr_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "qualidade-disponibilidade-agua"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 45,
+        "name": "laurisilva_madeira2_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "qualidade-disponibilidade-agua"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 46,
+        "name": "vinice_madeira_santana_h400.jpg",
+        "logicalPath": "/uploads/public/images/carousel/agricultura-florestas",
+        "physicalPath": "/data/uploads/public/images/carousel/agricultura-florestas",
+        "description": {
+            "pt": "imagem para o carousel - agricultura e florestas",
+            "en": "imagem para o carousel - agricultura e florestas"
+        },
+        "tags": ["image", "carousel", "qualidade-disponibilidade-agua"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 47,
+        "name": "Tref.zip",
+        "logicalPath": "/uploads/public",
+        "physicalPath": "/data/uploads/public",
+        "description": {
+            "pt": "Temp referencia",
+            "en": "Temp referencia (en)"
+        },
+        "tags": ["shape"],
+        "owner_id": 1
+    },
+
+    {
+        "id": 48,
+        "name": "Pref.zip",
+        "logicalPath": "/uploads/public",
+        "physicalPath": "/data/uploads/public",
+        "description": {
+            "pt": "Precepitacao referencia",
+            "en": "Prec referencia (en)"
+        },
+        "tags": ["mapa"],
+        "owner_id": 1
+    }
+
+
+    /*
+        {
+            "id": ...,
+            "name": "filename.pdf",
+            "logicalPath": "/uploads/",
+            "physicalPath": "/data",
+            "tags": ["tag1"],
+            "owner_id": 1
+        },
+
+
+    */
+
+
+
+]

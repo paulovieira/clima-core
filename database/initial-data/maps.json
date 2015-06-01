@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "code": "energia_centrais",
+        "title": {
+            "pt": "Energia - centrais energéticas",
+            "en": "Energy - power plants"
+
+        },
+        "file_id": 1,
+        "category_id": 105,
+        "schema_name": "geo",
+        "owner_id": 1
+    }
+
+
+
+
+    /*
+        {
+            "id": ...,
+            "name": "filename.pdf",
+            "path": "/uploads/",
+            "tags": ["tag1"],
+            "owner_id": 1
+        },
+
+
+    */
+
+
+
+]

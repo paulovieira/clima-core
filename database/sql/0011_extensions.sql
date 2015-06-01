@@ -1,0 +1,4 @@
+CREATE EXTENSION IF NOT EXISTS postgis WITH SCHEMA public;
+
+-- schema for maps
+CREATE SCHEMA IF NOT EXISTS geo;

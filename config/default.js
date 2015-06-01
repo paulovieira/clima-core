@@ -56,6 +56,9 @@ module.exports = {
 
     },
 
+    apiRoutePrefix: {
+        v1: "/api/v1"
+    },
 
     email: {
         // should be redefined in some other configuration file (that should be present in .gitignore)

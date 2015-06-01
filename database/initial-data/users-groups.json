@@ -1,0 +1,73 @@
+[
+	{
+		"id": 1,
+		"email": "paulovieira@gmail.com",
+		"groupCode": 99
+	},
+	{
+		"id": 2,
+		"email": "paulovieira@gmail.com",
+		"groupCode": 98
+	},
+
+	{
+		"id": 3,
+		"email": "pmagarrett@fc.ul.pt",
+		"groupCode": 99
+	},
+	{
+		"id": 4,
+		"email": "pmagarrett@fc.ul.pt",
+		"groupCode": 98
+	},
+	
+	{
+		"id": 5,
+		"email": "user_energia@gmail.com",
+		"groupCode": 1
+	},
+	{
+		"id": 6,
+		"email": "user_energia@gmail.com",
+		"groupCode": 98
+	},
+
+	{
+		"id": 8,
+		"email": "clima@clima.com",
+		"groupCode": 1
+	},
+
+	{
+		"id": 9,
+		"email": "dnavelar@fc.ul.pt",
+		"groupCode": 99
+	},
+	{
+		"id": 10,
+		"email": "dnavelar@fc.ul.pt",
+		"groupCode": 98
+	},
+
+	{
+		"id": 11,
+		"email": "hpcosta@fc.ul.pt",
+		"groupCode": 99
+	},
+	{
+		"id": 12,
+		"email": "hpcosta@fc.ul.pt",
+		"groupCode": 98
+	},
+
+	{
+		"id": 13,
+		"email": "anaferradagomes@gmail.com",
+		"groupCode": 99
+	},
+	{
+		"id": 14,
+		"email": "anaferradagomes@gmail.com",
+		"groupCode": 98
+	}
+]
