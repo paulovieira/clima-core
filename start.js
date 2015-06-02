@@ -2,6 +2,7 @@
 
 var Hoek = require('hoek');
 var Config = require('config');
+
 var Server = require('./server/index');
 
 
@@ -17,5 +18,5 @@ Server.init(internals.port, function (err, server) {
     Hoek.assert(!err, err);
     console.log('Server started at: ' + server.info.uri);
 });
-
-/**/
+/*
+*/

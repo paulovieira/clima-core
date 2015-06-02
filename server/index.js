@@ -1,13 +1,19 @@
 // Load modulesyyy
 
 var Hapi = require('hapi');
-var DB = require('./db');
+var Db = require('../database');
+var Utils = require('./utils');
 /*
 var HomeRoute = require('./routes/home');
 var GeneralPageRoute = require('./routes/general-page');
 var CatchAllRoute = require('./routes/catch-all');
 
 var ClimaAuthCookie = require('../../clima-auth-cookie/lib/index.js');
+*/
+
+
+
+/*
 */
 var ClimaApiTexts = require('../../clima-api-texts');
 
@@ -56,7 +62,8 @@ exports.init = function (port, next) {
     plugins.push({
         register: ClimaApiTexts,
         options: {
-            db: DB
+            db: Db,
+            utils: Utils
         }
     });
 
@@ -72,6 +79,25 @@ exports.init = function (port, next) {
         });
     });
 
+
+    server.method([
+        // {
+        //     name: "abortIfNotAuhtenticated"
+        //     method: function(err, result){
+
+        //     },
+        //     options: {
+
+        //     }
+        // }
+    ]);
+
+
+    // make sure we always have a "credentials" object on request.auth
+    server.ext("onPostAuth", function(request, reply){
+        request.auth.credentials = request.auth.credentials || {};
+        return reply.continue();
+    });
 
     // api
     // server.register(
@@ -94,3 +120,4 @@ exports.init = function (port, next) {
     // );
 
 };
+

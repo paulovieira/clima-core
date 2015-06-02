@@ -2,7 +2,7 @@
   "name": "clima-core",
   "version": "0.0.1",
   "description": "...",
-  "main": "lib/index.js",
+  "main": "start.js",
   "license": "BSD",
   "dependencies": {
     "bcrypt": "^0.8.3",
@@ -15,13 +15,12 @@
     "hapi-nunjucks": "^0.0.5",
     "hoek": "2.x.x",
     "json-format": "0.0.1",
+    "pg-monitor": "^0.2.0",
     "pg-promise": "^1.2.1",
     "q": "^1.4.1",
     "strip-json-comments": "^1.0.2"
   },
-  "scripts": {
-    "start": "node lib/start.js"
-  },
+
   "devDependencies": {
     "boom": "^2.7.1",
     "code": "1.x.x",

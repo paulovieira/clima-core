@@ -6,29 +6,33 @@ var jsonFormat = require('json-format');
 var Bcrypt = require("bcrypt");
 var _ = require("underscore");
 var changeCase = require("change-case-keys");
+var db = require("../");
 
 
-var internals = {};
+var internals = {
+	readFile: function(relativePath){
+		var array, dataPath = Path.join(__dirname, relativePath);
+		try{
+			array = JSON.parse(stripJsonComments(fs.readFileSync(dataPath, "utf-8")));	
+		} 
+		catch(err){
+			console.log("Error parsing this file: " + dataPath);
+			throw err;
+		}
 
-internals.readFile = function(relativePath){
-	var array, dataPath = Path.join(__dirname, relativePath);
-	try{
-		array = JSON.parse(stripJsonComments(fs.readFileSync(dataPath, "utf-8")));	
-	} 
-	catch(err){
-		console.log("Error parsing this file: " + dataPath);
-		throw err;
+	 	return array
+	},
+
+	// call JSON.stringify and escape single quote character
+	stringify: function(array){
+		changeCase(array, "underscored", 2);
+		return JSON.stringify(array).replace(/'/g, "''");
 	}
+};
 
- 	return array
-}
 
-internals.stringify = function(array){
-	changeCase(array, "underscored", 2);
-	return JSON.stringify(array);
-}
 
-module.exports = {
+var populate = {
 
 	initialize: function(db){
 		this.db = db;
@@ -131,7 +135,6 @@ module.exports = {
 						return resp;
 					})
 
-
 		return promise;
 	},
 
@@ -174,7 +177,6 @@ module.exports = {
 					})
 
 		return promise;
-
 	},
 
 	// NOTE: for files and maps we give the user id explicitely, instead of the email address
@@ -207,3 +209,36 @@ module.exports = {
 	}
 
 }
+
+
+populate.initialize(db)
+	.then(function(){
+		return populate.config();
+	})
+	.then(function(){
+		return populate.users();
+	})
+	.then(function(){
+		return populate.groups();
+	})
+	.then(function(){
+		return populate.users_groups();
+	})
+	.then(function(){
+		return populate.texts();
+	})
+	.then(function(){
+		return populate.files();
+	})
+	.then(function(){
+		return populate.maps();
+	})
+	.then(function(){
+		console.log("All done!");
+		db.end();
+	})
+	.catch(function(err){
+    	console.log(err);
+	});
+
+module.exports = populate;

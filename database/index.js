@@ -1,22 +1,28 @@
 var pgpLib = require('pg-promise'),
+    PgMonitor = require("pg-monitor"),
     config = require("config"),
     Q = require("q");
 
-
-console.log("               db: creating instance");
-
-var pgp = pgpLib({
+var pgpOptions = {
     promiseLib: Q
-}); 
+}
 
-var db = pgp({
+PgMonitor.attach(pgpOptions);
+
+var pgp = pgpLib(pgpOptions); 
+
+
+var connectionOptions = {
     host: config.get("db.postgres.host"),
     port: 5432,
     user: config.get("db.postgres.username"),
     password: config.get("db.postgres.password"),
     database: config.get("db.postgres.database"),
     //pgFormatting: true
-});
+};
+
+// db will be the exported object
+var db = pgp(connectionOptions);
 
 db.queryResult = {
     one: 1,     // single-row result is expected;
@@ -25,5 +31,11 @@ db.queryResult = {
     any: 6      // (default) = many|none = any result.
 };
 
+db.as = pgp.as;
+
+db.end = function(){
+    pgp.end();
+    console.log("Released all connections. Goodbye!");
+};
 
 module.exports = db;
