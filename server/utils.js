@@ -1,6 +1,8 @@
 var Config = require('config');
 var Hoek = require('hoek');
 var Boom = require('boom');
+var Joi = require('joi');
+var _s = require('underscore.string');
 
 module.exports = {
 
@@ -30,6 +32,44 @@ module.exports = {
 	    return array.map(function(obj){
 	        return Hoek.transform(obj, transform);
 	    });
+	},
+
+	// logStack: function(callsiteObj){
+
+ //        var output = '\x1b[36m' + (callsiteObj.getFunctionName() || 'anonymous') + '()\x1b[90m in '
+ //                    + callsiteObj.getFileName() + ":" + 
+ //                    + callsiteObj.getLineNumber();
+
+ //        server.log(["stack"], output);
+
+ //        return output;
+ //    },
+
+	validations: {
+		validateIds: function(value, options, next){
+
+			value.ids = _s.trim(value.ids, ",").split(",");
+
+			var idSchema = Joi.number().integer().min(0);
+
+			// must be an objet like this: { ids: [3,5,7] }
+			var schema = Joi.object().keys({
+			    ids: Joi.array().unique().items(idSchema)
+			});
+
+			var validation = Joi.validate(value, schema, Config.get('hapi.joi'));
+
+			if(validation.error){  return next(validation.error);  }
+
+			// at this point validation.value is on object of the form { ids: [3] } or { ids: [3,5] }; we want it to be
+			// { ids: [{id: 3}, {id: 5}] }  (then we simply have pass the [{id: 3}, {id: 5}] to the postgres function)
+
+			validation.value.ids = validation.value.ids.map(function(id){
+				return { "id": id };
+			});
+
+			return next(undefined, validation.value);
+		},
 	}
 
 
