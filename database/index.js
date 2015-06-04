@@ -7,7 +7,7 @@ var pgpOptions = {
     promiseLib: Q
 }
 
-PgMonitor.attach(pgpOptions);
+PgMonitor.attach(pgpOptions, null, true);
 
 var pgp = pgpLib(pgpOptions); 
 
